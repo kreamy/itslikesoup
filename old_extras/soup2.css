@@ -1,0 +1,111 @@
+/*
+ * {
+  border: 1px solid #fff;
+} 
+*/
+
+body {
+  background-color: #222222; /*changes background of entire page*/
+  color: antiquewhite; /*changes color of otherwise unspecified text on page*/
+  /*padding: 40px;  ***padding here restricts entire page, so it's better to leave this at 0 and narrow things later, if needed** */
+  font-family: 'Roboto'; /*changes font of otherwise unspecified text on page*/
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 600px;
+	margin: auto;
+}
+
+.header {
+	background: #555555
+}
+.nav {
+  text-align: center; /*centers links in nav bar*/
+  text-transform: uppercase;
+  /*position: relative; /*this allows us to possibly move nav around relative to default position*/
+  /*width: 100%; /*allows box of nav to extend to edges of page*/
+  /*background-color: rgb(34, 34, 34, 0.5);*/
+/*	margin-bottom: 8px;
+/*	margin-top: -65px;*/
+/*	padding-bottom: 40px;*/
+/*	padding-top: 0px;*/
+/*	top: 10px;*/
+	margin: 0;
+/* when website kinda looked to be in position
+	position: relative;
+	bottom: 48px;
+	height: 60px; 
+	padding: 0;
+	z-index: 10000;
+*/
+}
+
+.nav li {
+  display: inline; /*puts links in nav in a bar
+  /*margin-left: 10px;*/ /*these add the space between links in navigation bar*/
+  /*margin-right: 16px;*/
+  /*letter-spacing: 2px; /*makes nav links easier to read*/
+	margin-right: 10px;
+}
+
+#logo {
+	font-size: 30px;
+	display: inline;
+}
+
+.banner {
+  background-image: url(itslikesoup/images/space/universe1.jpg);
+  background-size: cover;
+	height: 350px;
+/*
+  position: relative;
+  height: 350px;
+  width: 100%;
+  top: 30px; 
+*/
+}
+
+ .banner-content {  /* ???turning this section on disables the universal selector to add border for all elements if universal selector is placed on the bottom; if up top, it works fine; why??? */
+   position: relative;
+	 top: 135px;
+ /*width: 70%; /* ???how to make the box padding not get any bigger when window expands??? */
+  /*text-align: center; **this can also set text centered but it's better to format all of h1 in it's own section** */
+	 border: 2px solid #fff; 
+	 text-align: center
+} 
+/*#souppic {  **this would apply if image were to be reinserted in HTML**
+  width: 40%;
+  margin: 170px auto 0 auto;
+	position: relative;
+}*/
+
+.content {
+	padding: 10px 15px;
+	margin-top: 10px;
+}
+
+h1 { /* **formats banner heading** */
+   
+  font-weight: 400px;
+  word-spacing: 4px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+	width: 100%; 
+}
+
+h5 {
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1.6em; 
+}
+
+p {
+  margin-top: 30px;*/
+}
+
+a {
+  text-decoration: underline;
+  color: saddlebrown; 
+}

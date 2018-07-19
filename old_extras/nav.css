@@ -1,0 +1,35 @@
+* {
+	border: 1px solid #fff;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+  background-color: #333;
+}
+
+.nav {
+  background-color: red;
+  text-align: center;
+}
+.nav li {
+  display: inline;
+  font-size: 30px;
+  margin-right: 30px;
+  background-color: aqua;
+}
+
+.button {
+	background-color: bisque;
+	color: #000;
+	font-family: monospace;
+	font-size: 18px;
+	letter-spacing: 3px;
+	padding: 3px;
+	box-sizing: border-box;
+	border: 1px solid #fff;
+	margin-top: 5px;
+}
