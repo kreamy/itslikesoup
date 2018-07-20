@@ -1,0 +1,281 @@
+/* CSS DIRECTORY
+      1. GLOBAL
+      2. PRIMARY
+      3. HEADER
+      4. NAV
+      5. BODY
+      6. SECTION
+      7. ARTICLE
+      8. SIDEBAR
+      9. FOOTER
+*/
+
+/* DOCUMENT INFORMATION
+      document: producky
+      version: 1.0
+      author: kremebey
+*/
+
+/* COLORS
+      default body text   #
+      subtitle h2 text    #fff
+      form input borders  #
+      default p text      #fff
+      pre borders         #
+*/
+
+/* FONTS
+      default body text   Arial, Helvetica Neue, Helvetica, sans-serif
+      subtitle h2 text    Mountain Retreat
+      form input text     Cambria, Georgia, Times, Times New Roman, Times, serif
+      default p text      Copperplate Light, Copperplate Gothic Light, serif
+      pre and code        Consolas, Lucida Console, Monaco, monoscpace
+
+*/
+
+/******** GENERIC ********/
+
+/* *, *::before, *::after { box-sizing: border-box } */
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+body {
+  background-color: beige;
+  /* background-color: #fffbe4; */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/******** HEADER ********/
+header {
+  /* border: 1px dotted black; */
+  color: black;
+  text-align: center;
+  font-family: courier;
+  font-style: normal;
+  font-weight: 200;
+}
+
+header h2{
+  /* border: 1px solid blue; */
+  font-size: 48px;
+  font-weight: lighter;
+  position: relative;
+}
+
+header h2::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  display: block;
+  background: red;
+}
+
+header h2::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  display: block;
+  background: red;
+}
+
+header span {
+  /* border: 1px solid black; */
+  color: #dc322f;
+  font-size: 32px;
+  display: ineline-block;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  vertical-align: middle;
+}
+
+/* ======== NAV ======== */
+.nav-bar {
+  /* border: 1px dashed red; */
+  background: deepskyblue;
+  border-radius: 4px;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+
+}
+
+.nav-bar a {
+  /* border:1px dotted white; */
+  color: white;
+  display: block;
+  text-decoration: none;
+  padding: .5em;
+
+}
+
+.nav-bar li {
+  padding: 0 15px;
+}
+
+
+.nav-bar li a:hover {
+  background-color: powderblue;
+   /* background: darken(skyblue, 20%); */
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+/* medium screens
+-----------------------------------*/
+/* @media all and (max-width: 800px) {
+  .nav-bar {
+    justify-content: space-around;
+  }
+} */
+
+/* small screens
+-----------------------------------*/
+@media all and (max-width: 600px) {
+  .nav-bar {
+    border: 1px dotted white;
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  .nav-bar a {
+    border: 1px dotted white;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    /* padding: 10px; */
+  }
+
+  .nav-bar li:last-of-type a {
+    border-bottom: none;
+  }
+
+  .nav-bar li {
+    padding: 0;
+
+  }
+}
+
+/* ======== SECTION ======== */
+section {
+  /* border: 1px dotted black; */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+/* ======== ARTICLE ======== */
+article {
+  /* border: 3px solid green; */
+  /* background-color: lightblue; */
+  height: 140px;
+  margin: 30px 0 0;
+  width: 100%;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+article header {
+  padding: 0 10px;
+  border-radius: 4px;
+  color: white;
+  position: absolute;
+  opacity: 1;
+  font-family: mountain_retreat;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  opacity: 0;
+  z-index: 1;
+  transition: .3s;
+}
+
+article h1 {
+  font-size: 26px;
+}
+
+article a {
+  /* border: 1px solid orange; */
+  display: contents;
+}
+
+article img {
+  /* border: 4px solid red; */
+  /* width: 100%; */
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+  transition: .3s;
+  border-radius: 8px;
+}
+
+article:hover img {
+  filter: blur(2px) brightness(60%);
+}
+
+article:hover header {
+  opacity: 1;
+}
+
+.post {
+  /* border: 1px solid purple; */
+  display: none;
+
+  /* background: #e8fff5; */
+  /* background: #ededed; */
+  background: #f4e7fa;
+  margin: 0 2em;
+  padding: 1.5em;
+  border-radius: 6px;
+}
+
+.post h3 {
+  /* border: 1px solid red; */
+  font-family: 'Open Sans';
+  font-size: 18px;
+  font-weight: 100;
+  text-align: center;
+  width: 400px;
+  /* max-width: 400px; */
+}
+
+
+
+/* it's like soup */

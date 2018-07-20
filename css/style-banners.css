@@ -1,0 +1,344 @@
+/* CSS DIRECTORY
+      1. GLOBAL
+      2. PRIMARY
+      3. HEADER
+      4. NAV
+      5. BODY
+      6. SECTION
+      7. ARTICLE
+      8. SIDEBAR
+      9. FOOTER
+*/
+
+/* DOCUMENT INFORMATION
+      document: producky
+      version: 1.0
+      author: kremebey
+*/
+
+/* COLORS
+      default body text   #
+      subtitle h2 text    #fff
+      form input borders  #
+      default p text      #fff
+      pre borders         #
+*/
+
+/* FONTS
+      default body text   Arial, Helvetica Neue, Helvetica, sans-serif
+      subtitle h2 text    Mountain Retreat
+      form input text     Cambria, Georgia, Times, Times New Roman, Times, serif
+      default p text      Copperplate Light, Copperplate Gothic Light, serif
+      pre and code        Consolas, Lucida Console, Monaco, monoscpace
+
+*/
+
+/******** GENERIC ********/
+*, *::before, *::after { box-sizing: border-box }
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+body {
+  background-color: beige;
+  /* background-color: #fffbe4; */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/******** HEADER ********/
+header {
+  /* border: 1px dotted black; */
+  color: black;
+  text-align: center;
+  font-family: courier;
+  font-style: normal;
+  font-weight: 200;
+}
+
+header h2{
+  /* border: 1px solid blue; */
+  font-size: 48px;
+  font-weight: lighter;
+  position: relative;
+}
+
+header span {
+  /* border: 1px solid black; */
+  color: #dc322f;
+  font-size: 32px;
+  display: ineline-block;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  vertical-align: middle;
+}
+
+/* ======== NAV ======== */
+/* large screens */
+nav {
+  /* border: 3px dotted red; */
+  /* position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 999;
+  background-color: beige;
+  width: 100%; */
+}
+
+.nav-bar {
+  /* border: 1px dashed red; */
+  background: deepskyblue;
+  border-radius: 4px;
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  justify-content: center;
+}
+
+.nav-bar a {
+  /* border:1px dotted white; */
+  color: white;
+  display: block;
+  text-decoration: none;
+  padding: .5em;
+
+}
+
+.nav-bar li {
+  padding: 0 15px;
+}
+
+
+.nav-bar li a:hover {
+  background-color: powderblue;
+   /* background: darken(skyblue, 20%); */
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+/* medium screens
+-----------------------------------*/
+/* @media all and (max-width: 800px) {
+  .nav-bar {
+    justify-content: space-around;
+  }
+} */
+
+/* small screens
+-----------------------------------*/
+@media all and (max-width: 600px) {
+  .nav-bar {
+    border: 1px dotted white;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  .nav-bar a {
+    border: 1px dotted white;
+    text-align: center;
+    /* padding: 10px; */
+  }
+
+  nav ul li {
+    padding: 0;
+  }
+}
+
+/* nav ul {
+  border: 1px dashed red;
+  background: skyblue;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul a {
+  border:1px dotted white;
+  color: white;
+  display: block;
+  padding: .5em;
+  text-decoration: none;
+}
+
+nav ul li {
+  padding: 0 15px;
+} */
+
+
+/* large screens */
+nav {
+  /* border: 1px dotted black; */
+  /* border-top: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+  font-size: 18px;
+  max-width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  background: deepskyblue;
+  list-style: none;
+  margin: 0; ///*/
+  /* margin: 5px 0; */
+  /* padding: 5px 50px; */
+  /* position: sticky;  when you scroll down, it stays at the top */
+  /* align-items: center; */
+}
+
+/* medium screens */
+/* @media all and (max-width: 800px) {
+  nav {
+    justify-content: space-around;
+  }
+} */
+
+/* small screens */
+/* @media all and (max-width: 500px) {
+  nav {
+    flex-direction: column;
+  }
+} */
+
+nav li {
+  /* border: 1px dotted black;
+  display: inline-block;
+  margin: 0 15px; ///*/
+  /* display: inline; */
+  /* padding: 5px 20px; */
+}
+
+nav ul {
+  /* margin: 10px auto; ///*/
+  /* list-style: none; */
+}
+
+nav li:first-child {
+  /* margin-left: 0 */
+}
+
+nav span, nav a {
+  /* text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white; /// */
+  /* padding: 3px 15px 4px */
+}
+
+nav span {
+  /* background: #dc322f;
+  color: #fff; /// */
+  /* vertical-align: middle; */
+}
+
+/* ======== SECTION ======== */
+section {
+  border: 1px dotted black;
+  /* margin: auto; */
+  /* float: none; */
+  /* padding: 0; */
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0 0 40px;
+  /* overflow: hidden; */
+}
+/* ======== ARTICLE ======== */
+article {
+  /* border: 1px solid green; */
+  /* background-color: lightblue; */
+  height: 140px;
+  /* overflow: hidden; */
+  /* position: relative; */
+  margin: 30px 0 0;
+  /* border-radius: 8px; this is added in img instead - no need for overflow */
+  /* object-fit: none; */
+  /* max-width: 100%; */
+  /* border-radius: 8px; */
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+article header {
+  padding: 0 10px;
+  border-radius: 4px;
+  color: white;
+  position: absolute;
+  opacity: 1;
+  font-family: mountain_retreat;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  opacity: 0;
+  z-index: 1;
+  transition: .3s;
+}
+
+article h1 {
+  font-size: 26px;
+}
+
+article a {
+  /* border: 1px solid orange; */
+  /* position: relative; */
+  /* overflow: hidden; */
+  display: contents;
+
+  /* display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center; */
+  /* width: 100%; */
+}
+
+article img {
+  /* border: 4px solid red; */
+  /* height: 100%; 100% of what? of container it's in? is that why it's stretched? */
+  width: 100%;
+  height: 100%;
+  /* height: 140px; */
+  /* height: auto; */
+  /* height: 130px; */
+  /* max-height: 100%; */
+  /* max-width: 100%; */
+  /* overflow: hidden; */
+  object-fit: cover;
+  border-radius: 8px;
+  /* display: block; */
+  /* padding: 10px; /* why does it misbehave when you turn this one? */
+  /* vertical-align: middle; */
+  /* position: relative; */
+  transition: .3s;
+}
+
+article:hover img {
+  filter: blur(2px) brightness(60%);
+}
+
+article:hover header {
+  opacity: 1;
+}
+
+
+/* it's like soup */

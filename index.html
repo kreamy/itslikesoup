@@ -1,53 +1,217 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title> it's like soup </title>
-  <link href="main.css" type="text/css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" type=text/css rel="stylesheet">
-</head>
+  <!-- basic page needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>producky</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
+  <!--CSS
+  ================================================== -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fonts.css" />
+  <script src="script.js"></script>
+
+  <!-- linked fonts
+================================================== -->
+<!--Libre Franklin Font Family-->
+<link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+<!--font-family: "Libre Franklin", sans-serif;
+-->
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<!-- font-family: 'Open Sans', sans-serif; -->
+
+  <!-- favicons
+================================================== -->
+  <link rel="shortcut icon" href="favicon.ico"
+  type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="images/x-icon">
+</head>
+<!--==================BODY================-->
 <body>
-  <!-- <div class="container"> -->
-  <!-- <div class="header"> -->
-    <ul class="nav">
-      <li><a href="#">Soup</a></li>
-      <li><a href="#">Soup</a></li>
-      <li><a href="#">Soup</a></li>
-      <li><a href="#">Soup</a></li>
-      <li><img id="logo" src="images/soupandspace/soup%20space%20copy%20(cropped).png" width="150" align="middle"</li>
-      <li><a href="#">Soup</a></li>
-      <li><a href="#">Soup</a></li>
-      <li><a href="#">Soup</a></li>
-      <li><a href="#">Soup</a></li>
-    </ul>		
-	</div>
- 
-	<!-- <img id="souppic" src="images/soupandspace/soup%20space.png"> ***picture can be placed here but it might be cleaner to create a div and add image source in CSS*** -->
-	
-	
-	<div class="banner">
-		<div class="container">
-		  <div class="banner-content">
-			<h1>its like soup. everything.</h1>				
-			</div>
-		</div>
-	</div>
-  
-	<div class="content">
-		<p>A wise woman once told me something that I'll never forget: "Everything is like soup."</p>
-  	<p>Mhmm.. Take that in for a minute or thirty. How simple yet profound... Everything is like freakin soup...</p>
-		<p>Here are some examples:</p>
-  	<h5> 
-			<ul>
-				<li>"Ugh, finals week blow!" Yes, you know what else blows? You. When your soup is too hot. Ok, it doesn't work so well here but lets try another example..</li>
-		
-				<li>"Jee whiz Stacy, you have such a calm and soothing personality." You know what else has a calm and soothing personality? Clam chowder. So, you can tell Stacy that she's just like clam chowder. "Aww, thank you, you're too sweet!" Stacy would reply.. Then guess what else is sweet, mushroom soup.</li>
-			</ul>
-		</h5>
-  <p>Every <a href="https://www.merriam-webster.com/dictionary/poop?pronunciation&amp;lang=en_us&amp;dir=p&amp;file=poop0001" title="poop" target="_blank">poop</a> you've ever taken is like soup, she said. Sometimes its runey and other times it's chunky. Sometimes it's red like a tomato bisque soup &#40;yum&#33;&#41; and if you're healthy, then it's like a hearty beef chunk chili soup.</p>
-      
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      
-      <p> oh hey!</p>
+<div class="wrapper">
+  <header id="logo">
+    <h2><a href="http://producky.com">producky| <span>blog</span></a></h2>
+  </header>
+<!--==================NAV================-->
+  <nav>
+    <ul class="nav-bar">
+      <li><a class="active" href="#"><span>all</span></a></li>
+      <li><a href="#">journal</a></li>
+      <li><a href="#">GAME</a></li>
+      <li><a href="#">silly</a></li>
+      <li><a href="#">adventure time</a></li>
+    </ul>
+  </nav>
+<!--==================SECTION================-->
+  <section>
+    <!-- <header><h4>section</h4></header> -->
+<!--==================ARTICLE================-->
+<!--
+Basic sctructure of this element group is
+
+<article>
+  <a>
+    <img style="object-position:">
+    <header>
+    </header>
+  </a>
+</article>
+
+-->
+
+<!-- __________________article 6__________________-->
+    <article id="six">
+      <a href="#6" id="5" onclick="toggle(this.id)">
+        <img src="images/banners/swissair.jpg" alt="swiss air air plane" style="object-position: 0px 5%">
+      <header>
+        <h1>article 6: </h1></header>
+      </a>
+    </article>
+
+    <!-- onclick="location.href='pageurl.html';" -->
+    <div class="post">
+      <h3>
+      ARTICLE 6 </h3>
+    </div>
+<!-- __________________article 5__________________-->
+    <article id="five">
+      <!-- <div class="thebanner"> -->
+        <a href="#5" id="4" onclick="toggle(this.id)">
+          <img src="images/banners/gasstationnew.jpg" alt="gas station" style="object-position: 100% 55%">
+        <header>
+          <h1>article five</h1></header></a>
+      <!-- </div> -->
+      </article>
+
+      <div class="post">
+        <h3>
+        ARTICLE 5 </h3>
+      </div>
+<!-- __________________article 4__________________-->
+    <article id="four">
+      <a href="#4" id="3" onclick="toggle(this.id)">
+        <img src="images/banners/jetplane.jpg" alt="jet plane" style="object-position: 0px 50%">
+        <header>
+          <h1>laziness, visceral goals, bullseye</h1>
+        </header>
+      </a>
+    </article>
+
+    <div class="post">
+      <h3>
+      ARTICLE 4 </h3>
+    </div>
+<!-- __________________article 3__________________-->
+    <article id="three">
+        <!-- <div class="thebanner"> -->
+          <a href="#3" id="2" onclick="toggle(this.id)"><img src="images/banners/gasstation2.png" alt="gas station" style="object-position: 100% 100%">
+        <!-- </div> -->
+        <header>
+          <h1>article 3: wake up</h1>
+        </header></a></article>
+
+        <div class="post">
+          <h3>
+          ARTICLE 3 </h3>
+        </div>
+<!-- __________________article 2__________________-->
+    <article id="two">
+    <a href="#2" id="1" onclick="toggle(this.id)"><img src="images/banners/oldwatches.jpg" alt="old watches" style="object-position: 100% 69%">
+      <header>
+        <h1 >excitement</h1></header></a></article>
+
+        <div class="post">
+          <h3>
+          ARTICLE 2 </h3>
+        </div>
+<!-- __________________article 1__________________-->
+    <article id="one" class="banner-container">
+    <!-- <article id="one"> -->
+      <a href="#1" id="0" onclick="toggle(this.id)">
+        <img src="images/banners/gasstationnew.jpg" alt="gas station" style="object-position: 100% 55%" class="banner-image">
+      <header class="title-box">
+        <h1 class="article-title">time station</h1></header></a></article>
+
+        <div class="post">
+          <h3> Time, must be more efficient with it. There is limited time in a day, which limits your weeks, months, years, goals, ambition, happiness. Spend time not on what asks for it now or in another minute, but on what aligns with your passion and intentioned purpose.
+<br>
+<br>
+The man at the Costco gas station chose to take his time backnig into the front spot to pump gas. He was too far so he decided to adjust his car and bring it closer, slowly. He decided to answer the machine's prompts, slowly, using the wrong card at times. He still pumped his car with gas but decided to not be hasty. That was his choice.
+<br>
+<br>
+You need to push yourself. Concede or complete?
+<br>
+<br>
+You choose.
+
+          <a href="../producky-blog/html/Costco Gas.html">click here to view</a></h3>
+        </div>
+  </section> <!-- end of section -->
+</div> <!-- end of wrapper -->
+
+<script>
+  // $(function() {
+  //   $(".banner-container").hover(function() {
+  //     $(".banner-container").addClass("blur");
+  //   }, function() {
+  //       $(".banner-container").removeClass("blur");
+  //   });
+  // });
+
+  // Add active class to the current button (highlight it)
+  // var header = document.getElementById("myDIV");
+  // var btns = header.getElementsByClassName("btn");
+  // for (var i = 0; i < btns.length; i++) {
+  //   btns[i].addEventListener("click", function() {
+  //     var current = document.getElementsByClassName("active");
+  //     current[0].className = current[0].className.replace(" active", "");
+  //     this.className += " active";
+  //   });
+  // }
+
+// ***for id***
+
+// function toggle() {
+//       var x = document.getElementById("post");
+//       if (x.style.display === "none") {
+//           x.style.display = "block";
+//       } else {
+//           x.style.display = "none";
+//       }
+//   }
+
+// ** for class **
+
+
+// function toggle() {
+//   var element = document.getElementByClassName("post")[1];
+//   element.classList.toggle()
+// }
+
+// function toggle() {
+//   var x = document.getElementsByClassName("post")[1];
+//   if (x.style.display === "none") {
+//     x.style.display = "block";
+//   } else {
+//     x.style.display = "none";
+//   }
+// }
+
+function toggle(clicked_id) {
+    var numArticlesMinusOne = 5
+    var x = document.getElementsByClassName("post")[numArticlesMinusOne - clicked_id];
+    if (x.style.display === "none") {
+        x.style.display = "flex";
+        x.style.justifyContent = "center";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
 </body>
 </html>

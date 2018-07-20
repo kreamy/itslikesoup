@@ -1,0 +1,218 @@
+/*
+ * moon
+================================================================================ */
+@font-face {
+   font-family: 'moon';
+   src: url("../fonts/moon/Moon2.0-Regular.otf") format("otf");
+   font-style: normal;
+   font-weight: normal;
+}
+
+@font-face {
+   font-family: "moon-bold";
+   src: url("../fonts/moon/Moon2.0-Bold.otf") format("otf");
+   font-style: normal;
+   font-weight: bold;
+}
+
+@font-face {
+   font-family: "moon-light";
+   src: url("../fonts/moon/Moon2.0-Light.otf") format("otf");
+   font-style: normal;
+   font-weight: lighter;
+}
+
+/*
+ * alcubierre
+================================================================================ */
+/* @font-face {
+  font-family: 'alcubierre';
+  src: url('../fonts/Alcubierre.otf') format('otf');
+  font-style: normal;
+  font-weight: normal;
+} */
+
+@font-face {
+    font-family: 'alcubierre';
+    src: url('../fonts/alcubierre/alcubierre-webfont.woff2') format('woff2'),
+         url('../fonts/alcubierre/alcubierre-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/*
+ * polya
+================================================================================ */
+@font-face {
+    font-family: 'polya';
+    src: url('../fonts/polya-webfont.woff2') format('woff2'),
+         url('../fonts/polya-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*
+ * dosis
+================================================================================ */
+@font-face {
+    font-family: 'dosis';
+    src: url('../fonts/dosis/dosis_extra_light-webfont.woff2') format('woff2'),
+         url('../fonts/dosis/dosis_extra_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*
+ * bariol
+================================================================================ */
+@font-face {
+    font-family: 'bariol';
+    src: url('../fonts/bariol/bariol_regular-webfont.eot');
+    src: url('../fonts/bariol/bariol_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bariol/bariol_regular-webfont.woff2') format('woff2'),
+         url('../fonts/bariol/bariol_regular-webfont.woff') format('woff'),
+         url('../fonts/bariol/bariol_regular-webfont.svg#bariolregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'bariol';
+    src: url('../fonts/bariol/bariol_regular-webfont.eot');
+    src: url('../fonts/bariol/bariol_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bariol/bariol_regular_italic-webfont.woff2') format('woff2'),
+         url('../fonts/bariol/bariol_regular_italic-webfont.woff') format('woff'),
+         url('../fonts/bariol/bariol_regular-webfont.svg#bariolregular') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+/*
+ * coda
+================================================================================ */
+@font-face {
+    font-family: 'coda';
+    src: url('../fonts/coda/coda_regular-webfont.woff2') format('woff2'),
+         url('../fonts/coda/coda_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*
+ * monly
+================================================================================ */
+@font-face {
+    font-family: 'monly';
+    src: url('../fonts/monly/monly-light-webfont.woff2') format('woff2'),
+         url('../fonts/moly/monly-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+ * mountain retreat
+================================================================================ */
+@font-face {
+    font-family: 'mountain_retreat';
+    src: url('../fonts/mountain retreat/mountain_retreat-webfont.woff2') format('woff2'),
+         url('../fonts/mountain retreat/mountain_retreat-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*
+ * pointy
+================================================================================ */
+@font-face {
+    font-family: 'pointy';
+    src: url('../fonts/pointy/pointy_demo-webfont.woff2') format('woff2'),
+         url('../fonts/pointy/pointy_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*
+ * courier new
+================================================================================ */
+/* @font-face {
+  font-family: 'couriernew';
+  src:
+    local('Courier New'),
+    local('Courier-New'),
+    url('../fonts/courier-new/Courier New.ttf'), format('ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'couriernew';
+  src: local('Courier New Bold'), url('..fonts/courier-new/Courier New Bold.ttf'), format('ttf');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'couriernew';
+  src:
+    local('Courier New Italics'), local('Courier-New-Italics')
+    url('../fonts/courier-new/Courier New Italic.ttf')
+    format('ttf');
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'couriernew';
+  src: url('../fonts/courier-new/Courier New Bold Italic.ttf'), format('ttf');
+  font-style: italic;
+  font-weight: bold;
+} */
+
+
+/*
+ * soerjaputera
+================================================================================ */
+/* @font-face {
+  font-family: 'soerjaputera';
+  src:
+    url('../fonts/Soerjaputera.ttf'), format('ttf');
+    url('../fonts/courier-new/Soerjaputera.tff'), format('ttf');
+  font-style: normal;
+  font-weight: normal; */
+
+
+/*
+ * libre baskerville
+================================================================================ */
+/* @font-face {
+   font-family: "librebaskerville-regular";
+   src: url("../fonts/librebaskerville/librebaskerville-regular-webfont.woff2") format("woff2"), url("../fonts/librebaskerville/librebaskerville-regular-webfont.woff") format("woff");
+   font-style: normal;
+   font-weight: normal;
+}
+
+@font-face {
+   font-family: "librebaskerville-italic";
+   src: url("../fonts/librebaskerville/librebaskerville-italic-webfont.woff2") format("woff2"), url("../fonts/librebaskerville/librebaskerville-italic-webfont.woff") format("woff");
+   font-style: normal;
+   font-weight: normal;
+}
+
+@font-face {
+   font-family: "librebaskerville-bold";
+   src: url("../fonts/librebaskerville/librebaskerville-bold-webfont.woff2") format("woff2"), url("../fonts/librebaskerville/librebaskerville-bold-webfont.woff") format("woff");
+   font-style: normal;
+   font-weight: normal;
+} */
+
+/*
+ * metropolis
+================================================================================ */
